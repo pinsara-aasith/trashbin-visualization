@@ -22,7 +22,7 @@ app.post('/trashCanFilledPercentage', function (req, res) {
     io.emit('trashCanFilledPercentageUpdate', trashCanFilledPercentage);
     console.log('Updated trashfill percentage: ' + trashCanFilledPercentage);
     
-    res.write('updated');
+    res.write('updated the percentage');
     res.end();
 });
 
